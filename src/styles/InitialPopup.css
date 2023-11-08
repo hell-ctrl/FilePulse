@@ -1,0 +1,119 @@
+div.popupI {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 85%;
+  height: 35%;
+  background: #f8f8ff;
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto; 
+  border-radius: 10px;
+  padding: 5px;
+  box-shadow: 0px 0px 5px #808080;
+  animation: bounceIn 1s;
+  z-index: 10;
+}
+
+
+div.popupI > div.image-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 0%;
+  transform: translate(0%, -50%); 
+  background: #8a82fb;
+  width: 7rem;
+  height: 7rem;
+  border-radius: 50%;
+  box-shadow: 0px 0px 5px #808080;
+}
+
+div.popupI > div.image-container > svg {
+  width: 90%;
+  border: 1px solid #000;
+  border-radius: 50%
+}
+
+
+div.popupI > div.form {
+  display: flex;
+  width: 80%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+}
+
+div.popupI > div.form > span {
+  color: #8a82fb;
+  align-self: flex-start;
+  font-size: 1.3rem;
+}
+
+div.popupI > div.form > .btn-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  width: 100%;
+  height: 2rem
+}
+
+div.popupI > div.form > .btn-container button {
+  border: none;
+  color: #fff;
+  border-radius: 5px;
+  height: 100%;
+  width: 100%; 
+  outline: none;
+  text-align: center;
+  cursor: pointer;
+}
+
+div.popupI > div.form > .btn-container button:hover {
+  border: 1px solid #000;
+  transform: scale(1.05);
+}
+
+div.popupI > div.form > .btn-container button.new-avatar {
+  background-color: #8a82fb;
+}
+
+div.popupI > div.form > .btn-container button.confirm {
+  background-color: #3CB371
+}
+
+div.popupI > div.form > input {
+  height: 2rem;
+  outline: none;
+  width: 100%;
+  border-radius: 5px;
+  border: 1px solid #808080;
+  padding: 5px;
+}
+
+div.popupI > div.form > .error-message {
+  color: #FF6347;
+  align-self: flex-start;
+  font-size: 0.8rem;
+  
+}
+
+
+.overlay {
+ position: absolute;
+ top: 50%;
+ left: 50%;
+ width: 100%;
+ height: 100%;
+ transform: translate(-50%, -50%);
+ backdrop-filter: blur(2px);
+ -webkit-backdrop-filter: blur(2px);
+ z-index: 1
+}
